@@ -15,7 +15,7 @@ function NavTabs() {
       </TabList>
 
       <TabPanel>
-        <Home />
+        <Dashboard />
       </TabPanel>
 
       <TabPanel>

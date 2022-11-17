@@ -9,6 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@fremtind/jkl-button-react": "^12.0.11",
     "@fremtind/jkl-tabs-react": "^3.0.8",
     "@types/react-router-dom": "5.3.3",
     "axios": "^1.1.3",
