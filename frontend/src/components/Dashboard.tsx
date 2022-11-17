@@ -1,8 +1,9 @@
-import {getDevices} from '../apiClient';
+import {getAllDevices, getDeviceInfo} from '../apiClient';
 
 function Dashboard() {
 
-  getDevices();
+  getAllDevices();
+  getDeviceInfo();
 
 
   return (
