@@ -4,6 +4,7 @@ import config from "./config";
 import NavTabs from "./NavTabs";
 
 function App() {
+
   return (
     <div className="App">
       <nav>
