@@ -1,14 +1,15 @@
-import {getAllDevices, getDeviceInfo} from '../apiClient';
+import {getAllDevices, getDeviceInfo, rotateServo} from '../apiClient';
 
 function Dashboard() {
 
-  getAllDevices();
-  getDeviceInfo();
+  //getAllDevices();
+  //getDeviceInfo();
 
 
   return (
     <div>
       <h1>Dashboard</h1>
+      <button onClick={rotateServo}>ROTATE</button>
     </div>
   );
 }

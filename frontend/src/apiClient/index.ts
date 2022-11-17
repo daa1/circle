@@ -26,6 +26,18 @@ export const getDeviceInfo = async () => {
   }
 }
 
+export const rotateServo = async () => {
+  try {
+    const request = {
+      "arg": "rotate"
+    }
+    const { data } = await axios.post<typeof request>(deviceEP + "/servo", request, headers);
+    return data;
+  } catch (error) {
+    handleError(error);
+  }
+}
+
 const headers: AxiosRequestConfig = {
   headers: {
     Authorization: 'Bearer ' + token,
