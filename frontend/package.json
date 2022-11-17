@@ -9,6 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@fremtind/jkl-tabs-react": "^3.0.8",
     "@types/react-router-dom": "5.3.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
@@ -19,6 +20,10 @@
     "@types/react": "^18.0.24",
     "@types/react-dom": "^18.0.8",
     "@vitejs/plugin-react": "^2.2.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "prettier": "^2.7.1",
+    "stylelint-config-prettier": "^9.0.4",
     "typescript": "^4.6.4",
     "vite": "^3.2.3"
   }
