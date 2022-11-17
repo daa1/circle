@@ -7,8 +7,8 @@ import Dashboard from './components/Dashboard';
 import config from "./config"
 
 // https://docs.particle.io/reference/cloud-apis/javascript/
-import ParticleAPI from 'particle-api-js';
-const api = new ParticleAPI();
+//import ParticleAPI from 'particle-api-js';
+//const api = new ParticleAPI();
 import NavTabs from "./NavTabs";
 
 function App() {
@@ -25,11 +25,6 @@ function App() {
       <nav>
           <NavTabs></NavTabs>
       </nav>
-      <Switch>
-        <Route exact path="/" component={Home} />
-        <Route path="/dashboard" component={Dashboard} />
-        <Route path="/visualisering" component={Visualisering} />
-      </Switch>
     </div>
   );
 }
