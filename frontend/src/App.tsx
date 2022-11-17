@@ -1,6 +1,9 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
 import './App.css'
+import {Link, NavLink, Route, Switch} from 'react-router-dom';
+import Home from './components/Home';
+import Visualisering from './components/Visualisering';
+import Dashboard from './components/Dashboard';
 import config from "./config"
 
 // https://docs.particle.io/reference/cloud-apis/javascript/
@@ -18,28 +21,20 @@ function App() {
   */
 
   return (
-    <div className="App">
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src="/vite.svg" className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://reactjs.org" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+      <div className="App">
+          <nav>
+              <div className="menu">
+                  <NavLink to="/">Home</NavLink>
+                  <NavLink to="/dashboard">Dashboard</NavLink>
+                  <NavLink to="/visualisering">Visualisering</NavLink>
+              </div>
+          </nav>
+          <Switch>
+              <Route exact path="/" component={Home} />
+              <Route path="/dashboard" component={Dashboard} />
+              <Route path="/visualisering" component={Visualisering} />
+          </Switch>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </div>
   )
 }
 
